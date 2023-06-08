@@ -14,10 +14,23 @@
 </head>
 <body>
   <div class="container">
-    <h1>Message sent</h1>
-    <p class="back">Go back to the <a href="./form.html">Main Page</a></p>
-    
+    <h1>Contact Me</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perspiciatis enim soluta minima pariatur, deserunt, iure ut amet odio a doloribus nemo quia.</p>
+    <form action="send-email.php" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name">
 
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email">
+
+      <label for="subject">Subject:</label>
+      <input type="text" name="subject" id="subject">
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+      <input type="submit" value="Send">
+    </form>
   </div>
 </body>
 </html>
