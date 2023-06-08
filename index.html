@@ -10,9 +10,14 @@
 
     <title>Hello, world!</title>
   </head>
+  <style>
+    .com.no{
+      opacity: 0;
+    }
+  </style>
   <body>
 
-    <div class="container mt-5">
+    <div class="container mt-5" id="com">
         <h1>Contact Me!</h1>
 
         <form class="row g-3" action="https://formsubmit.co/773f3433497a64d7d7b8d79e0c35b7db" method="POST">
@@ -63,7 +68,10 @@
       function returnText(){
           input = document.getElementById("comments").value;
           localStorage.setItem('input', input)
-          alert(input)
+
+          input = document.getElementById("com");
+          input.classList.add("no")
+
       }
 
       console.log(input)
