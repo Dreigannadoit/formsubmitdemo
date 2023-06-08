@@ -51,11 +51,23 @@
           </div>
 
           <div class="col-md-12">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="returnText()">Submit</button>
           </div>
 
         </form>
     </div>
+    
+    <script>
+      let input = localStorage.getItem('input')
+
+      function returnText(){
+          input = document.getElementById("comments").value;
+          localStorage.setItem('input', input)
+          alert(input)
+      }
+
+      console.log(input)
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
