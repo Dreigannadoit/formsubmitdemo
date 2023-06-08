@@ -10,6 +10,11 @@
 
     <title>Hello, world!</title>
   </head>
+  <style>
+    input{
+      text-transform: capitalize;
+    }
+  </style>
   <body>
 
     <div class="container mt-5">
@@ -18,12 +23,13 @@
         <form class="row g-3" action="https://formsubmit.co/773f3433497a64d7d7b8d79e0c35b7db" method="POST">
 
           <!-- HoneyPot -->
-
           <input type="text" name="_honey" style="display: none;">
 
           <!-- Disable Captcha -->
           <input type="hidden" name="_captcha" value="false">
-          
+
+          <input type="hidden" name="_next" value="https://dreigannadoit.github.io/formsubmitdemo/index.html">
+
           <div class="col-md-6">
             <label for="firstName" class="form-label">First Name</label>
             <input type="text" class="form-control" name="Name" id="firstName" required>
